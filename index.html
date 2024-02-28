@@ -7,6 +7,8 @@
     <title>Portfolio-page</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="./img/logo.svg" type="-image/x-icon">
+
+    <script src="./js/index.js" defer></script>
 </head>
 
 <body>
@@ -27,15 +29,33 @@
 
                 <ul class="nav__list">
                     <!-- <li><a href="">.myWork()</a></li> -->
-                    <li><button id="about" type="button">About Me</button></li>
+                    <!-- <li><button id="about" type="button">About Me</button></li> -->
                 </ul>
             </nav>
 
-            <div class="header__social">
-                <img src="./img/social/telegram.svg" alt="">
-                <img src="./img/social/vk.svg" alt="">
-                <img src="./img/social/whatsapp.svg" alt="">
-                <img src="./img/social/github.svg" alt="">
+            <div class="header__social social">
+
+                <a href="https://t.me/repishnyy" target="_blank">
+                    <img src="./img/social/telegram.svg" alt="иконка социальной сети телеграмм">
+                </a>
+
+                <a href="https://vk.com/id271101977" target="_blank">
+                    <img src="./img/social/vk.svg" alt="иконка социальной сети  вконтакте">
+                </a>
+
+                <a href="https://wa.me/89115409566">
+                    <img src="./img/social/whatsapp.svg" alt="иконка социальной сети вотсап">
+                </a>
+
+
+                <a href="https://github.com/RepishnyNikita?tab=repositories" target="_blank">
+                    <img src="./img/social/github.svg" alt="иконка социальной сети гитхаб">
+                </a>
+
+            </div>
+
+            <div class="header__icon icon">
+                <div class="icon__menu"></div>
             </div>
 
         </div>
@@ -51,14 +71,16 @@
 
                     <div class="card__popup popup">
 
-                        <h4 class="popup__title">Stack: HTML, SCSS, GULP</h4>
+                        <h4 class="popup__title">STACK: HTML, SCSS, GULP</h4>
 
-                        <ul class="popup__desc">
-                            <li>Верстка лединга интернет-магазина.</li>
-                            <li>Реализация адаптивности под мобильные устройства</li>
-                            <li>Работа с библиотекой swiper slade</li>
-                            <li>Комбинированая верстка FLEX - GRID</li>
-                            <li>Методология BEM</li>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">Верстка лединга интернет-магазина c помощью таск-менеджера.
+                            </li>
+                            <li class="popup__list-item">Реализация адаптивности под мобильные устройства.</li>
+                            <li class="popup__list-item">Работа с библиотекой swiper slide.</li>
+                            <li class="popup__list-item">Скрипт счетчика дней, часов, минут, секунд.</li>
+                            <li class="popup__list-item">Комбинированая верстка FLEX - GRID.</li>
+                            <li class="popup__list-item">Методология BEM.</li>
                         </ul>
 
                         <div class="popup__btn">
@@ -73,14 +95,19 @@
                     <img class="card__img" src="./img/card/02.png" alt="Изображение карточки портфолио">
                     <div class="card__popup popup">
 
-                        <h4 class="popup__title">Stack: HTML, SCSS, GULP</h4>
+                        <h4 class="popup__title">STACK: HTML, SCSS, GULP</h4>
 
-                        <ul class="popup__desc">
-                            <li>Верстка лединга интернет-магазина.</li>
-                            <li>Реализация адаптивности под мобильные устройства</li>
-                            <li>Работа с библиотекой swiper slade</li>
-                            <li>Комбинированая верстка FLEX - GRID</li>
-                            <li>Методология BEM</li>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">Верстка лединга тревел-агенства с использованием
+                                таск-менеджера.</li>
+                            <li class="popup__list-item">Реализация адаптивности под мобильные устройства.</li>
+                            <li class="popup__list-item">Работа с библиотекой swiper slide. Большой упор был сделан на
+                                секцию с отзывами</li>
+                            <li class="popup__list-item">Комбинированая верстка FLEX - GRID.</li>
+                            <li class="popup__list-item">Методология BEM.</li>
+                            <li class="popup__list-item">Использование библиотеки ScrollReveal для анимации блоков</li>
+                            <li class="popup__list-item">Интеграция datepicker в форму обратной связи.</li>
+                            <li class="popup__list-item">Списки городов с фильтромю</li>
                         </ul>
 
                         <div class="popup__btn">
@@ -94,14 +121,16 @@
                     <img class="card__img" src="./img/card/03.png" alt="Изображение карточки портфолио">
                     <div class="card__popup popup">
 
-                        <h4 class="popup__title">Stack: HTML, SCSS, GULP</h4>
+                        <h4 class="popup__title">STACK: HTML, SCSS, JS</h4>
 
-                        <ul class="popup__desc">
-                            <li>Верстка лединга интернет-магазина.</li>
-                            <li>Реализация адаптивности под мобильные устройства</li>
-                            <li>Работа с библиотекой swiper slade</li>
-                            <li>Комбинированая верстка FLEX - GRID</li>
-                            <li>Методология BEM</li>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">Верстка лединга магазина по продаже мебели для интерьера.</li>
+                            <li class="popup__list-item">Реализация адаптивности под мобильные устройства.</li>
+                            <li class="popup__list-item">Работа с библиотекой swiper slide.</li>
+                            <li class="popup__list-item">Комбинированая верстка FLEX - GRID.</li>
+                            <li class="popup__list-item">Методология BEM.</li>
+                            <li class="popup__list-item">Реализация подсказок на главном экране</li>
+                            <li class="popup__list-item">Добавление фильтра по категориям</li>
                         </ul>
 
                         <div class="popup__btn">
@@ -115,14 +144,14 @@
                     <img class="card__img" src="./img/card/04.png" alt="Изображение карточки портфолио">
                     <div class="card__popup popup">
 
-                        <h4 class="popup__title">Stack: HTML, SCSS, GULP</h4>
+                        <h4 class="popup__title">STACK: HTML, SCSS, JS</h4>
 
-                        <ul class="popup__desc">
-                            <li>Верстка лединга интернет-магазина.</li>
-                            <li>Реализация адаптивности под мобильные устройства</li>
-                            <li>Работа с библиотекой swiper slade</li>
-                            <li>Комбинированая верстка FLEX - GRID</li>
-                            <li>Методология BEM</li>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">Верстка простого лединга.</li>
+                            <li class="popup__list-item">Реализация адаптивности под мобильные устройства.</li>
+                            <li class="popup__list-item">Отточка использование функции clamp</li>
+                            <li class="popup__list-item">Верстка FLEXBOX.</li>
+                            <li class="popup__list-item">Методология BEM.</li>
                         </ul>
 
                         <div class="popup__btn">
@@ -136,14 +165,14 @@
                     <img class="card__img" src="./img/card/05.png" alt="Изображение карточки портфолио">
                     <div class="card__popup popup">
 
-                        <h4 class="popup__title">Stack: HTML, SCSS, GULP</h4>
+                        <h4 class="popup__title">STACK: HTML, SCSS, JS</h4>
 
-                        <ul class="popup__desc">
-                            <li>Верстка лединга интернет-магазина.</li>
-                            <li>Реализация адаптивности под мобильные устройства</li>
-                            <li>Работа с библиотекой swiper slade</li>
-                            <li>Комбинированая верстка FLEX - GRID</li>
-                            <li>Методология BEM</li>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">Верстка лединга сервиса, по изготовлению карт.</li>
+                            <li class="popup__list-item">Реализация адаптивности под мобильные устройства.</li>
+                            <li class="popup__list-item">Написание скрипта для секции с аккордионом</li>
+                            <li class="popup__list-item">Комбинированая верстка FLEX - GRID.</li>
+                            <li class="popup__list-item">Методология BEM.</li>
                         </ul>
 
                         <div class="popup__btn">
@@ -157,14 +186,14 @@
                     <img class="card__img" src="./img/card/06.png" alt="Изображение карточки портфолио">
                     <div class="card__popup popup">
 
-                        <h4 class="popup__title">Stack: HTML, SCSS, GULP</h4>
+                        <h4 class="popup__title">STACK: HTML, CSS, JS</h4>
 
-                        <ul class="popup__desc">
-                            <li>Верстка лединга интернет-магазина.</li>
-                            <li>Реализация адаптивности под мобильные устройства</li>
-                            <li>Работа с библиотекой swiper slade</li>
-                            <li>Комбинированая верстка FLEX - GRID</li>
-                            <li>Методология BEM</li>
+                        <ul class="popup__list">
+                            <li class="popup__list-item">Верстка лединга атосервиса.</li>
+                            <li class="popup__list-item">Адаптив под мобильные устройства.</li>
+                            <li class="popup__list-item">Форма обратной связи с отправкой данных.</li>
+                            <li class="popup__list-item">Верстка FLEXBOX</li>
+                            <li class="popup__list-item">Методология BEM.</li>
                         </ul>
 
                         <div class="popup__btn">
@@ -184,6 +213,28 @@
             <p class="footer__copyright">© 2023 HTML - верстальщик Никита Репишный</p>
         </div>
     </footer>
+
+    <div id="social-mobile" class="social social--none">
+
+        <a href="https://t.me/repishnyy" target="_blank">
+            <img src="./img/social/telegram.svg" alt="иконка социальной сети телеграмм">
+        </a>
+
+        <a href="https://vk.com/id271101977" target="_blank">
+            <img src="./img/social/vk.svg" alt="иконка социальной сети  вконтакте">
+        </a>
+
+        <a href="https://wa.me/89115409566">
+            <img src="./img/social/whatsapp.svg" alt="иконка социальной сети вотсап">
+        </a>
+
+
+        <a href="https://github.com/RepishnyNikita?tab=repositories" target="_blank">
+            <img src="./img/social/github.svg" alt="иконка социальной сети гитхаб">
+        </a>
+
+    </div>
+
 
 </body>
 

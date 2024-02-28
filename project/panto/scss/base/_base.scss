@@ -3,14 +3,12 @@
 html,body{
     font-family: var(--font-main);
     color: var(--text-Color);
-    height: 100%;
 }
 
 body{
     // padding-bottom: 50vh;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .container{

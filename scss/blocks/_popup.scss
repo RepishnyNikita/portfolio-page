@@ -28,10 +28,25 @@
     font-size: 24px;
 }
 
-.popup__desc {
+.popup__list {
     display: grid;
     gap: 15px;
+}
+
+.popup__list-item{
+    position: relative;
     font-size: 14px;
+    padding-left: 10px;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 5px;
+        height: 1px;
+        background-color: #fff;
+    }
 }
 
 .popup__btn {
@@ -55,7 +70,4 @@
 }
 
 
-@keyframes hover {
-
-}
 

@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -417,6 +421,7 @@ legend {
 }
 
 .header {
+  position: relative;
   padding: 20px 0 clamp(40px, 0.893rem + 7.14vw, 100px);
 }
 
@@ -446,13 +451,6 @@ legend {
   align-items: center;
   gap: 15px;
 }
-.header__social img {
-  width: 30px;
-  transition: 0.1s ease-in;
-}
-.header__social img:hover {
-  transform: translateY(3px);
-}
 @media (max-width: 767px) {
   .header__social {
     display: none;
@@ -476,10 +474,98 @@ legend {
   font-size: 20px;
 }
 
+.icon {
+  width: 45px;
+  height: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 99;
+}
+@media (max-width: 767px) {
+  .icon {
+    display: flex;
+  }
+}
+
+.icon__menu {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  background-color: rgb(236, 228, 228);
+  border-radius: 4px;
+}
+.icon__menu::before, .icon__menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 5px;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  background-color: rgb(236, 228, 228);
+  border-radius: 4px;
+}
+.icon__menu::before {
+  top: -10px;
+}
+.icon__menu::after {
+  top: 10px;
+}
+
+.icon.icon--active {
+  position: fixed;
+  top: 35px;
+  right: 20px;
+}
+
+.icon.icon--active .icon__menu {
+  background-color: transparent;
+}
+.icon.icon--active .icon__menu::before, .icon.icon--active .icon__menu::after {
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  background-color: #fff;
+}
+.icon.icon--active .icon__menu::before {
+  transform: rotate(45deg);
+}
+.icon.icon--active .icon__menu::after {
+  transform: rotate(-45deg);
+}
+
 .logo {
   font-size: clamp(25px, 1.161rem + 1.79vw, 40px);
   color: #fff;
   font-weight: 700;
+}
+
+.social img {
+  width: 30px;
+  transition: 0.1s ease-in;
+}
+.social img:hover {
+  transform: translateY(3px);
+}
+.social--none {
+  display: none;
+}
+
+.social--mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(36, 37, 40, 0.8);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  height: 100%;
+  width: 180px;
+  z-index: 9;
 }
 
 .main {
@@ -538,10 +624,24 @@ legend {
   font-size: 24px;
 }
 
-.popup__desc {
+.popup__list {
   display: grid;
   gap: 15px;
+}
+
+.popup__list-item {
+  position: relative;
   font-size: 14px;
+  padding-left: 10px;
+}
+.popup__list-item::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 5px;
+  height: 1px;
+  background-color: #fff;
 }
 
 .popup__btn {
@@ -562,7 +662,6 @@ legend {
   color: #fff;
 }
 
-@keyframes hover {}
 .footer {
   margin-top: auto;
   padding: 20px 0;
