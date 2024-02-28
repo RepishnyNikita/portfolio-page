@@ -1,0 +1,31 @@
+.products {
+    padding: 50px 0;
+    background-color: #F7F7F7;
+}
+
+.product__title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.product__tabs {
+    text-align: center;
+    margin-bottom: clamp(40px, 1.31rem + 5.95vw, 80px);
+}
+
+.product__slider {
+    margin-bottom: clamp(30px, 0.982rem + 4.46vw, 60px);
+
+    @include desktop-small(){
+        padding: 0 40px;
+    }
+
+    @include mobile (){
+        padding: 0 20px;
+    }
+}
+
+.product__link {
+    text-align: center;
+}
+

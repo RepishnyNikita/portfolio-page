@@ -1,0 +1,52 @@
+@use './../base/mixine';
+
+.header{
+    padding: 20px 0 clamp(40px, 0.893rem + 7.14vw, 100px);
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-img {
+    width: 35px;
+
+    @include mixine.mobile{
+        width: 20px;
+    }
+}
+
+.header__nav {
+    
+}
+
+.header__social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    img{
+        width: 30px;
+        transition: 0.1s ease-in;
+
+        &:hover{
+            transform: translateY(3px);
+        }
+    }
+
+    @include mixine.mobile{
+
+        display: none;
+        // img{
+        //     width: 20px;
+        // }
+    }
+}

@@ -1,0 +1,19 @@
+@use './../base/mixine';
+
+.nav {
+    a{
+        color: #fff;
+        font-weight: 500;
+    }
+
+    @include mixine.mobile{
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}

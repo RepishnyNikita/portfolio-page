@@ -1,0 +1,18 @@
+@use "./../base/mixine";
+
+.main {
+    padding: 50px 0;
+}
+
+.main__container {
+}
+
+.main__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 40px 20px;
+    justify-content: center;
+}
+
+.main__grid-card {
+}

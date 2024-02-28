@@ -1,0 +1,26 @@
+@use "./../base/mixine";
+
+.card {
+    position: relative;
+    justify-self: center;
+
+    &:hover {
+        .popup{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0%);
+        }
+    }
+}
+
+.card__img {
+    border-radius: 10px;
+    max-width: 360px;
+
+    @include mixine.mobileX{
+        max-width: 290px;
+    }
+}
+
+
+
